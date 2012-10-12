@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>InfiniWall - Indefinitely panning layer in Javascript</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<script src="js/jquery.js"></script>
 	<script src="js/infiniwall.js"></script>
 </head>
 
@@ -64,10 +65,12 @@ li {
 	border-right: 1px solid #000;
 	border-bottom: 1px solid #000;
 	overflow: hidden;
+	cursor:default;
 }
 
 li img {
 	position: absolute;
+	
 }
 
 .spinner {
@@ -173,6 +176,17 @@ li span {
 }
 
 </style>
+<script type="text/javascript">
+ 
+ $(document).ready(function() {	
+    $('li img').css('cursor','default');
+	
+	$('li').click( function () {
+		alert("TA-DA!!!");
+	});
+ });
+ 
+</script>
 <body>
 	<div id="infiniwall">
 		<ul>
