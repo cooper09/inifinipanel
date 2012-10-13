@@ -189,7 +189,18 @@ li span {
 </script>
 <body>
 
-<a href="#" onClick=alert('Yowsa!!!!'); return false;">Click Me, Baby!</a>
+<a href="#" onClick=alert('Yowsa!!!!'); return false;>Click Me, Baby!</a>
+<p></p>
+<a href="#" onClick=beep();>Beep Me, Baby!</a>
+
+
+<script type="text/javascript">
+
+	function beep() {
+		navigator.notification.beep(3);	
+	}
+
+</script>
 
 	<div id="infiniwall">
 		<ul>
